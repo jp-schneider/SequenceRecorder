@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Sequence.Recorder.Tools.Converters.FrameworkElementJSONConverter">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\FrameworkElementJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.KeyboardDeviceJSONConverter">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\KeyboardDeviceJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.PresentationSourceJSONConverter">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\PresentationSourceJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.RoutedEventJSONConverter">
+    <Position X="3.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\RoutedEventJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.HashFunction">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAARAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\HashFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.LogEventArgs">
+    <Position X="9.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAA=</HashCode>
+      <FileName>Tools\LogEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Functions">
+    <Position X="6" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAAiABAAAAAAAAACAAAAAQAIAACgAAAAAAAA=</HashCode>
+      <FileName>Tools\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

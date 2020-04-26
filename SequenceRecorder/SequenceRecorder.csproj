@@ -79,14 +79,7 @@
     <Compile Include="Tools\LogEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SequenceRecorderEnums.cd" />
-    <None Include="SequenceRecorderClasses.cd" />
     <None Include="packages.config" />
-    <None Include="SequenceRecorderConfiguration.cd" />
-    <None Include="SequenceRecorderEvents.cd" />
-    <None Include="SequenceRecorderGUI.cd" />
-    <None Include="SequenceRecorderProcessing.cd" />
-    <None Include="SequenceRecorderStore.cd" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

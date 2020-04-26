@@ -96,6 +96,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Diagram\SequenceRecorderClasses.cd" />
+    <None Include="Diagram\SequenceRecorderConfiguration.cd" />
+    <None Include="Diagram\SequenceRecorderEnums.cd" />
+    <None Include="Diagram\SequenceRecorderEvents.cd" />
+    <None Include="Diagram\SequenceRecorderGUI.cd" />
+    <None Include="Diagram\SequenceRecorderProcessing.cd" />
+    <None Include="Diagram\SequenceRecorderStore.cd" />
+    <None Include="Diagram\SequenceRecorderTools.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
