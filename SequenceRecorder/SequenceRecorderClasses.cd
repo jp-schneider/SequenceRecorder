@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="Sequence.Recorder.Configuration.Settings">
+    <Position X="0.5" Y="17.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>Configuration\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Configuration.Config">
+    <Position X="0.5" Y="13.75" Width="4.5" />
+    <AssociationLine Name="Instance" Type="Sequence.Recorder.Configuration.Config" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.938" Y="13.75" />
+        <Point X="3.938" Y="13.5" />
+        <Point X="1.5" Y="13.5" />
+        <Point X="1.5" Y="13.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.117" Y="0.067" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Settings" Type="Sequence.Recorder.Configuration.Settings">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.956" Y="0.26" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAEAAAAAAAAQIgEAAAAAAAAhAAAIAwAAAAQAAAAA=</HashCode>
+      <FileName>Configuration\Config.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Instance" />
+      <Property Name="Store" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Settings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Events.EventDescription">
+    <Position X="10" Y="2.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAgAAAAgAAEAAAAAIAAAIAAAAAAAAgAQAA=</HashCode>
+      <FileName>Events\EventDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Processing.EventProcessingStartedEventArgs">
+    <Position X="11" Y="12.25" Width="2.75" />
+    <AssociationLine Name="EventArgsContainer" Type="Sequence.Recorder.Store.IEventStore">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.164" Y="-1.506" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Processing\EventProcessingStartedEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventArgsContainer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Processing.EventProcessingFinishedEventArgs">
+    <Position X="9" Y="14.25" Width="4.75" />
+    <AssociationLine Name="EventArgsContainer" Type="Sequence.Recorder.Store.IEventStore">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.084" Y="0.088" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Processing\EventProcessingFinishedEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventArgsContainer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Processing.EventProcessing">
+    <Position X="9" Y="16.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>UIAUKAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Processing\EventProcessing.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Processing.EventOccuredEventArgs">
+    <Position X="11.25" Y="10.25" Width="2.5" />
+    <AssociationLine Name="CreatedContainer" Type="Sequence.Recorder.Store.IEventStore">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.118" Y="0.113" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Processing\EventOccuredEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CreatedContainer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Processing.EventArgsContainer" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="16.25" Width="3" />
+    <AssociationLine Name="EventDefinition" Type="Sequence.Recorder.Events.EventDefinition" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="19.603" />
+        <Point X="8.5" Y="19.978" />
+        <Point X="14.125" Y="19.978" />
+        <Point X="14.125" Y="6.581" />
+        <Point X="13.75" Y="6.581" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.08" Y="-0.542" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAIIEAAEACAAACAAAAAAAAABABIAAA=</HashCode>
+      <FileName>Processing\EventArgsContainer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventDefinition" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sequence.Recorder.GUI.FrameworkElementSmall">
+    <Position X="0.5" Y="10.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAgAAAAAQAAAAAIKAAAQAAAAAAAAg=</HashCode>
+      <FileName>GUI\FrameworkElementSmall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.GUI.Tracker">
+    <Position X="0.5" Y="3.75" Width="4.5" />
+    <AssociationLine Name="TrackingEvents" Type="Sequence.Recorder.Events.IEventDefinition">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.718" Y="0.41" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAQAAAAAAAgAAIAAQAAACAAiAABAAQAAgIA=</HashCode>
+      <FileName>GUI\Tracker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TrackingEvents" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.GUI.Recorder" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GUI\Recorder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.GUI.FrameworkElementEvent">
+    <Position X="0.5" Y="7.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAoAgAAAAAAgAAAIAAAAIAAAAAAAA=</HashCode>
+      <FileName>GUI\FrameworkElementEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Event" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.LogEventArgs">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Type" Type="Sequence.Recorder.Enums.LogType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="2.812" />
+        <Point X="7.875" Y="2.812" />
+        <Point X="7.875" Y="4" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.124" Y="0.296" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAQA=</HashCode>
+      <FileName>Tools\LogEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.HashFunction">
+    <Position X="7.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAARAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\HashFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.FrameworkElementJSONConverter">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\FrameworkElementJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.KeyboardDeviceJSONConverter">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\KeyboardDeviceJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.PresentationSourceJSONConverter">
+    <Position X="3.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\PresentationSourceJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Converters.RoutedEventJSONConverter">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Converters\RoutedEventJSONConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Tools.Functions" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAAiABAAAAAAAAACAAAAAQAIAACgAAAAAAAA=</HashCode>
+      <FileName>Tools\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Events.EventDefinition">
+    <Position X="9.5" Y="5.75" Width="4.25" />
+    <AssociationLine Name="Description" Type="Sequence.Recorder.Events.EventDescription">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.574" Y="0.03" Height="0.182" Width="1.365" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAgAAAygAACAAAEQKAgAIAAAAAAAAAAAAE=</HashCode>
+      <FileName>Events\EventDefinition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Description" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Interface Name="Sequence.Recorder.Store.IEventStore">
+    <Position X="6" Y="10.25" Width="2.75" />
+    <AssociationLine Name="Sender" Type="Sequence.Recorder.GUI.FrameworkElementSmall">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.091" Y="0.165" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="TrackingElement" Type="Sequence.Recorder.GUI.FrameworkElementSmall">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.083" Y="0.062" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAIAAAAACAAACAAAAAAAAABABIAAA=</HashCode>
+      <FileName>Store\IEventStore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sender" />
+      <Property Name="TrackingElement" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Sequence.Recorder.Store.IEventStorage">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Store\IEventStorage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sequence.Recorder.Events.IEventDefinition">
+    <Position X="6" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAASAAAAAAAEAIAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Events\IEventDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Sequence.Recorder.Enums.LogType">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Enums\LogType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sequence.Recorder.Enums.EventType" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>F5368j8wu/cy7HnPWijDnChdVM9wscxJQsj60Hrahms=</HashCode>
+      <FileName>Enums\EventType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

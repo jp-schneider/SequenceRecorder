@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Enum Name="Sequence.Recorder.Enums.EventType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>F5368j8wu/cy7HnPWijDnChdVM9wscxJQsj60Hrahms=</HashCode>
+      <FileName>Enums\EventType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sequence.Recorder.Enums.LogType">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Enums\LogType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

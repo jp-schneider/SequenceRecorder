@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sequence.Recorder.Configuration.Config">
+    <Position X="0.75" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAAAAAAAAQIgEAAAAAAAAhAAAAAwAAAAQAAAAA=</HashCode>
+      <FileName>Configuration\Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence.Recorder.Configuration.Settings">
+    <Position X="5" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>Configuration\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

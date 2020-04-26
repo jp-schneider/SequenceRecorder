@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sequence.Recorder.Events.EventDefinition">
+    <Position X="0.5" Y="0.5" Width="5" />
+    <Members>
+      <Method Name="EventDefinition" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAgAAAygAACAAAEQKAgAIAAAAAAAAAAAAE=</HashCode>
+      <FileName>Events\EventDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sequence.Recorder.Events.EventDescription">
+    <Position X="5.75" Y="2.5" Width="4.25" />
+    <Members>
+      <Method Name="EventDescription" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAgAAAAgAAEAAAAAIAAAIAAAAAAAAgAQAA=</HashCode>
+      <FileName>Events\EventDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Sequence.Recorder.Events.IEventDefinition">
+    <Position X="5.75" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAASAAAAAAAEAIAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Events\IEventDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

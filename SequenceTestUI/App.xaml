@@ -1,0 +1,10 @@
+﻿<Application x:Class="Sequence.Test.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sequence.Test.UI"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:MethodInvokeConverter x:Key="MethodInvokeConverter"/>
+        <local:LogMultiConverter x:Key="LogMultiConverter"/>
+    </Application.Resources>
+</Application>

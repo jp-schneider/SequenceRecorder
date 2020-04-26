@@ -1,0 +1,91 @@
+﻿<Page x:Class="Sequence.Test.UI.TestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sequence.Test.UI"
+      xmlns:recorder="clr-namespace:Sequence.Recorder.GUI;assembly=SequenceRecorder"
+      mc:Ignorable="d" KeyDown="Page_KeyDown"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TestPage">
+    <Page.Resources>
+        <Style x:Key="ListViewHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Background" Value="LightBlue"/>
+        </Style>
+        <DataTemplate x:Key="ListViewHeaderTemplate">
+            <DockPanel>
+                <TextBlock FontSize="16" Foreground="DarkBlue" Text="{Binding}">
+                </TextBlock>
+            </DockPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="CellProperty1Template">
+            <DockPanel>
+                <TextBox Foreground="DarkBlue" HorizontalAlignment="Center" Text="{Binding}">
+                </TextBox>
+            </DockPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="CellProperty2Template">
+            <DockPanel>
+                <TextBox Foreground="DarkBlue" HorizontalAlignment="Center" Text="{Binding}">
+                </TextBox>
+            </DockPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="CellProperty3Template">
+            <DockPanel>
+                <TextBox Foreground="DarkBlue" HorizontalAlignment="Center">
+                    <TextBox.Text>
+                        <Binding Path="Property3"/>
+                    </TextBox.Text>
+                </TextBox>
+            </DockPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid Background="AliceBlue">
+        <Label Content="Test Page" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox x:Name="tbText" HorizontalAlignment="Left"  Height="23" Margin="10,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbInsertText" Text="Unchangeable" HorizontalAlignment="Left"  Height="23" Margin="10,55,0,0" KeyDown="TbInsertText_KeyDown" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbType" HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="23" Margin="150,55,0,0" Width="80" SelectedItem="{Binding Type, Mode=TwoWay}" ItemsSource="{Binding Types}"></ComboBox>
+        <ListView x:Name="tblListView" HorizontalAlignment="Left" Height="182" SelectedIndex="{Binding SelectedIndexValue}" SelectionChanged="ListView_SelectionChanged" Margin="10,85,0,0" VerticalAlignment="Top" Width="492">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="auto" Header="Property1" HeaderContainerStyle="{StaticResource ListViewHeaderStyle}"
+                      HeaderTemplate="{StaticResource ListViewHeaderTemplate}"
+                      DisplayMemberBinding="{Binding Path=Property1}"/>
+                    <GridViewColumn Width="auto" Header="Property2" HeaderContainerStyle="{StaticResource ListViewHeaderStyle}"
+                      HeaderTemplate="{StaticResource ListViewHeaderTemplate}"
+                      DisplayMemberBinding="{Binding Path=Property2}"/>
+                    <GridViewColumn Width="auto" Header="Property3" HeaderContainerStyle="{StaticResource ListViewHeaderStyle}"
+                      HeaderTemplate="{StaticResource ListViewHeaderTemplate}"
+                      DisplayMemberBinding="{Binding Path=Property3}"/>
+                </GridView>
+            </ListView.View>
+            <local:TestClass Property1="Test1" Property2="1" Property3="01.01.2019"/>
+            <local:TestClass Property1="Test2" Property2="2" Property3="02.01.2019"/>
+            <local:TestClass Property1="Test3" Property2="3" Property3="03.01.2019"/>
+            <local:TestClass Property1="Test4" Property2="4" Property3="04.01.2019"/>
+        </ListView>
+        <TreeView x:Name="tvTreeView" HorizontalAlignment="Left" Height="182" Margin="510,83,0,0" VerticalAlignment="Top" Width="100">
+            <TreeViewItem Header="Employee1">
+                <TreeViewItem Header="Muster"/>
+                <TreeViewItem Header="Manfred"/>
+                <TreeViewItem Header="12345"/>
+            </TreeViewItem>
+            <TreeViewItem Header="Employee2">
+                <TreeViewItem Header="Muster"/>
+                <TreeViewItem Header="Erika"/>
+                <TreeViewItem Header="98765"/>
+            </TreeViewItem>
+        </TreeView>
+        <Button x:Name="btnButton" Content="A Button" HorizontalAlignment="Left" Margin="249,55,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+       
+        <TextBox x:Name="tbText1" HorizontalAlignment="Left"  Height="23" Margin="223,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText2" HorizontalAlignment="Left"  Height="23" Margin="372,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.34,0.483"/>
+        <TextBox x:Name="tbText3" HorizontalAlignment="Left"  Height="23" Margin="412,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText4" HorizontalAlignment="Left"  Height="23" Margin="440,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText5" HorizontalAlignment="Left"  Height="23" Margin="302,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText6" HorizontalAlignment="Left"  Height="23" Margin="163,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText7" HorizontalAlignment="Left"  Height="23" Margin="90,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbText8" HorizontalAlignment="Left"  Height="23" Margin="90,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>
